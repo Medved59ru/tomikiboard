@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 32px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+header {
+  margin-top: 50px;
+}
+
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+[class^=box-] {
+  display: grid;
+  place-items: center;
+  border: 1px black;
+  border-style: solid;
+}
+
+.containertop {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: 900;
+  height: 65px;
+}
+
+#aka, #akachuipart2, #akashidopart2, #sirochuipart2, #siroshidopart2, #akachuipart1, #akashidopart1, #sirochuipart1, #siroshidopart1 {
+  color: red;
+}
+
+.containermain {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  padding-left: 5px;
+  padding-right: 5px;
+  justify-content: center;
+  justify-self: center;
+  font-weight: 500;
+}
+
+.containerbottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 40px;
+  font-weight: 900;
+  height: 65px;
+}
+
+.buttons {
+  display: grid;
+  margin-left: 5px;
+  margin-right: 5px;
+  grid-template-columns: repeat(1, 1fr);
+  border: 3px black;
+  border-style: solid;
+  margin-top: 30px;
+  place-items: center;
+}
+
+.containermaintoshu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  padding-left: 5px;
+  padding-right: 5px;
+  justify-content: center;
+  justify-self: center;
+  font-weight: 500;
+}
+.containermaintoshu .box-2,
+.containermaintoshu .box-6,
+.containermaintoshu #siroipponpart2,
+.containermaintoshu #akaipponpart2,
+.containermaintoshu #sirowazaaripart2,
+.containermaintoshu #akawazaaripart2,
+.containermaintoshu #siroukopart2,
+.containermaintoshu #akaukopart2,
+.containermaintoshu #sirochuipart2,
+.containermaintoshu #akachuipart2,
+.containermaintoshu #siroshidopart2,
+.containermaintoshu #akashidopart2 {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  body, .containertop, .containermaintoshu, .wrapper, main {
+    font-size: 16px;
+  }
+  .containerbottom {
+    font-size: 20px;
+  }
+}
+@media (max-width: 700px) {
+  body, main {
+    font-size: 8px;
+  }
+  .containerbottom {
+    font-size: 16px;
+  }
+}
+@media (max-width: 400px) {
+  body, main, #text {
+    font-size: 8px;
+  }
+  .containerbottom {
+    font-size: 12px;
+  }
+}
